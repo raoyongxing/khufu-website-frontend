@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import Article from '../home/article.vue';
 </script>
 
 <template>
-    <p>{{ 'about' }}</p>
+    <Article></Article>
 </template>
 
 <style scoped>
