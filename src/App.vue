@@ -27,7 +27,7 @@ watch(()=> router.currentRoute.value, (curRoute)=> {
 
 <style scoped>
 .root-bg {
-    background-image: url('./assets//bg.webp');
+    background-image: url('./assets/bg.webp');
     background-image: url('http://s6j45h2me.hb-bkt.clouddn.com/home/bg.webp?e=1704792000&token=sGnbI2SQOA1_S3LF60KUPQ896EefQ4-7hfofGNLn:SvsVplEHlKB6743BVV2_h3Ejs64=');
     position: fixed;
     height: 100vh;
