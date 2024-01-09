@@ -30,7 +30,7 @@
                     <RouterLink to="/about">SHARED</RouterLink>
                 </li>
                 <li class=" px-4 text-lg text-rose-300 cursor-pointer">
-                    <RouterLink to="/about">CONTRACT</RouterLink>
+                    <RouterLink to="/contract">CONTRACT</RouterLink>
                 </li>
             </ul>
         </nav>

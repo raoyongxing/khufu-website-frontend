@@ -4,7 +4,7 @@
 </script>
 
 <template>
-
+    <span></span>
     <!-- <Article></Article> -->
 </template>
 
