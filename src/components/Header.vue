@@ -24,7 +24,7 @@
                     <RouterLink to="/about">DAILY</RouterLink>
                 </li>
                 <li class=" px-4 text-lg text-rose-300 cursor-pointer">
-                    <RouterLink to="/about">BLOG</RouterLink>
+                    <RouterLink to="/blog">BLOG</RouterLink>
                 </li>
                 <li class=" px-4 text-lg text-rose-300 cursor-pointer">
                     <RouterLink to="/about">SHARED</RouterLink>

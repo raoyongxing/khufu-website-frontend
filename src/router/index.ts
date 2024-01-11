@@ -17,6 +17,14 @@ const routes: Array<RouteRecordRaw> = [
         component: ()=> import('@/pages/about/index.ts')
     },
     {
+        path: '/blog',
+        name: 'blog',
+        component: ()=> import('@/pages/blog/index.ts'),
+        meta: {
+            rootBg: false
+        }
+    },
+    {
         path: '/contract',
         name: 'contract',
         component: ()=> import('@/pages/contract/index.ts'),
