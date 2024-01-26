@@ -34,6 +34,8 @@
                 </li>
             </ul>
         </nav>
-        <div class="h-12">do you know</div>
+        <div class="h-10">
+            <span class=" inline-flex h-10 w-10 text-white bg-rose-200 rounded-full overflow-hidden justify-center items-center">King</span>
+        </div>
     </div>
 </template>
