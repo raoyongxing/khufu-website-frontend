@@ -64,7 +64,7 @@ onMounted(() => {
     } else {
         contentGridElements = []
     }
-    const intersectionObserver = new IntersectionObserver((entries) => {
+    const intersectionObserver = new IntersectionObserver((entries) => { 
         entries.forEach(entry => {
             if (entry.isIntersecting && !entry.target.classList.contains('kf-is-inserted')) {
                 let target = entry.target as HTMLElement

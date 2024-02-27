@@ -1,6 +1,6 @@
 <!-- 路由切换动画 -->
 <script setup lang="ts">
-    import { ref, onMounted, onUnmounted, Ref, computed } from 'vue';
+    import { ref, onMounted, onUnmounted, Ref,  defineProps, computed } from 'vue';
 
     interface ShuffleSpan {
         active: boolean,
@@ -19,7 +19,7 @@
     })
 
     let shuffle = ref([] as number[])
-    let shuffleAnimationTimer: Ref<number>
+    let shuffleAnimationTimer:number
     let domList: Ref<ShuffleSpan[]>
     let orderCount:number
 
@@ -54,11 +54,11 @@
             }
         }))
         orderCount = -1
-        shuffleAnimationTimer = ref(setInterval(shuffleAnimation, 17))
+        shuffleAnimationTimer = window.setInterval(shuffleAnimation, 17)
     })
 
     onUnmounted(() => {
-        clearInterval(shuffleAnimationTimer.value)
+        window.clearInterval(shuffleAnimationTimer)
     })
 
 </script>
@@ -67,3 +67,20 @@
         <span v-for="(_span, key) in domList" :key="key" :class="_span.active ? classNames.active : ''"></span>
     </div>
 </template>
+<style>
+.animate-leave {
+    position: absolute;
+}
+
+.active-leave {
+
+}
+
+.animate-enter {
+
+}
+
+.active-enter {
+    
+}
+</style>
